@@ -3,11 +3,13 @@
 ![normal_X_ForTittle](https://github.com/SimonMing0528/PowerSlateX_For-Nuke-Nuke-slate-plugin/assets/137688513/7bd34e95-3172-4430-ae59-ad976f3f1cad) <br>
 <br> 
 
-A Nuke slate plugin developed using Prism2, a VFX project workflow management software, capable of displaying current shot version information within the frame (e.g., shot ID, version number, frame range, project naming, etc.). This facilitates daily progress checks, comparisons, and allows for shot review personnel to confirm version details efficiently during regular work tasks <br>
+A Nuke slate plugin, capable of displaying current shot version information within the frame (e.g., shot ID, version number, frame range, project naming, etc.). This facilitates daily progress checks, comparisons, and allows for shot review personnel to confirm version details efficiently during regular work tasks <br>
 <br>
 
-![LCT 拷贝](https://github.com/SimonMing0528/PowerSlateX_For-Nuke-Nuke-slate-plugin/assets/137688513/49f3367a-0dfd-4b54-a0e7-daf19954903f)
+If you're using Prism2 to manage your project files, to get the plugin version compatible with Prism2  [click here](https://github.com/SimonMing0528/PowerSlate-Nuke_ForPrism2)
 
+![LCT 拷贝](https://github.com/SimonMing0528/PowerSlateX_For-Nuke-Nuke-slate-plugin/assets/137688513/49f3367a-0dfd-4b54-a0e7-daf19954903f)
+>source: < The Wandering Earth 2 >
 # Installation
 1. Copy the `PowerSlate_nuke` full folder into the Nuke environment directory.<br>
 it's usually at `C:\Users\(your username)\.nuke`
@@ -21,7 +23,7 @@ nuke.pluginAddPath('./PowerSlate_nuke/py')
 ```
 
 3. Once you've completed the above steps, launch your Nuke application. If the installation was successful, you should see the icon on the left side of the interface
-nuke slate plugin for version information of shots used in Nuke ![4200431](https://github.com/SimonMing0528/PowerSlateX_For-Nuke-Nuke-slate-plugin/assets/137688513/df2ef4e5-8a21-494e-92b3-57820ba87289)
+ ![4200431](https://github.com/SimonMing0528/PowerSlateX_For-Nuke-Nuke-slate-plugin/assets/137688513/df2ef4e5-8a21-494e-92b3-57820ba87289)
 
 
 # Usage <br>
@@ -52,7 +54,7 @@ Checking this option will display all lens information within a black border out
 <br>
 
 ![03225043](https://github.com/SimonMing0528/PowerSlate-Nuke_ForPrism2/assets/137688513/79844a62-c325-4d4c-b3c3-1fb964121355) <br>
-<br>
+>source: < The Wandering Earth 2 > <br>
 <br>
 
 ## Use TC code
