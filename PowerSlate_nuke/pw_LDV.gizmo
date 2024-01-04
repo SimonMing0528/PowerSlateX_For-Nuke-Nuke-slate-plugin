@@ -1,0 +1,156 @@
+#! E:/TheFoundry/Nuke13.2v3/nuke-13.2.3.dll -nx
+version 13.2 v3
+Gizmo {
+ tile_color 0x62d6ff
+ gl_color 0x77ffeeff
+ label "<font size=3 color=YELLOW>LookDev:::\n\n"
+ lifetimeStart 1001
+ lifetimeEnd 1100
+ addUserKnob {20 Setting}
+ addUserKnob {26 PowerSlateAssets l "" +STARTLINE T "PowerSlate_LookDev\n"}
+ addUserKnob {26 ""}
+ addUserKnob {26 _1 l "" +STARTLINE T "Please make sure to set the correct 'FullSizeFormat' in project settings before using"}
+ addUserKnob {26 ""}
+ addUserKnob {1 Project l "Project Name"}
+ Project input_Name
+ addUserKnob {26 "" -STARTLINE}
+ addUserKnob {1 Assets}
+ Assets input_name
+ addUserKnob {26 "" -STARTLINE}
+ addUserKnob {26 _2 l "" +STARTLINE}
+ addUserKnob {1 Artist}
+ Artist None
+ addUserKnob {3 Version -STARTLINE}
+ Version 1
+ addUserKnob {26 "" -STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {20 Size n 1}
+ Size 0
+ addUserKnob {41 size l "Text Size" T FileName.size}
+ addUserKnob {41 frameSize l "Frame Size" T Frame.size}
+ addUserKnob {20 endGroup n -1}
+ addUserKnob {26 ""}
+ addUserKnob {20 Info n 1}
+ Info 0
+ addUserKnob {26 Gizmo_info l "" +STARTLINE T "\nPowerSlate V1.0.1\n\nby: Simon.Ming"}
+ addUserKnob {26 Contact_me l "" +STARTLINE T "\n\nContact: \nSimon.lee.edu@outlook.com"}
+ addUserKnob {26 ""}
+ addUserKnob {20 endGroup_1 l endGroup n -1}
+}
+ Input {
+  inputs 0
+  name Input1
+  xpos -44
+  ypos 197
+ }
+ Crop {
+  box {0 {"root.height* -0.0489"} {root.width()} {root.height+root.height*0.034 653.2}}
+  reformat true
+  intersect true
+  name Crop2
+  xpos 229
+  ypos 197
+ }
+ NoOp {
+  name NoOp1
+  xpos 229
+  ypos 329
+ }
+ Text {
+  message "\[date %b]  \[date %d] \[date %Y]"
+  font C:/Windows/Fonts/arial.ttf
+  size {{FileName.size}}
+  yjustify bottom
+  Transform 1
+  box {0 0 522 86.75}
+  translate {{root.width*0.038} {root.height*1.049}}
+  center {1024 576.5}
+  name Date
+  xpos 474
+  ypos 329
+ }
+ Text {
+  message "V0\[value PowerSlate_LDV.Version]"
+  font C:/Windows/Fonts/arial.ttf
+  size {{FileName.size}}
+  yjustify bottom
+  Transform 1
+  box {0 0 522 86.75}
+  translate {{root.width*0.87} {root.height*1.049}}
+  center {1024 576.5}
+  name Ver_Num
+  xpos 474
+  ypos 388
+ }
+ Text {
+  message "Assets:  \[value PowerSlate_LDV.Assets]"
+  font C:/Windows/Fonts/arial.ttf
+  size {{FileName.size}}
+  yjustify bottom
+  Transform 1
+  box {0 0 545.5 80.92499995}
+  translate {{"root.width * 0.278"} {"root.height* 0.004"}}
+  center {1024 576.5}
+  name Assets
+  xpos 474
+  ypos 462
+ }
+ Text {
+  message "\[file tail \[value root.name \[file rootname \[value root.name]]]]"
+  font C:/Windows/Fonts/arial.ttf
+  size 25.5
+  yjustify bottom
+  Transform 1
+  box {0 0 739 86.75}
+  translate {{"root.width* 0.002"} {"root.height * 0.004"}}
+  center {1024 576.5}
+  name FileName
+  xpos 475
+  ypos 558
+ }
+ Text {
+  message "\[value frame]"
+  font C:/Windows/Fonts/arial.ttf
+  size 63
+  xjustify center
+  yjustify bottom
+  Transform 1
+  box {-46.5 0 101 56.5}
+  translate {{root.width*0.944} {root.height*0.001}}
+  center {1024 576.5}
+  name Frame
+  xpos 475
+  ypos 681
+ }
+ Text {
+  message "artist:  \[value PowerSlate_LDV.Artist]"
+  font C:/Windows/Fonts/arial.ttf
+  size {{FileName.size}}
+  yjustify bottom
+  Transform 1
+  box {0 0 455.5 114.8000031}
+  translate {{root.width*0.542} {root.height*0.004}}
+  center {1024 576.5}
+  name artist
+  xpos 475
+  ypos 810
+ }
+ Text {
+  message "Project:  \[value PowerSlate_LDV.Project]"
+  font C:/Windows/Fonts/arial.ttf
+  size {{FileName.size}}
+  yjustify bottom
+  Transform 1
+  box {0 0 399 140}
+  translate {{root.width*0.71} {root.height*0.004}}
+  center {1024 576.5}
+  name PROJECT
+  xpos 475
+  ypos 896
+ }
+ Output {
+  name Output1
+  xpos 501
+  ypos 984
+ }
+end_group
