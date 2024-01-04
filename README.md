@@ -9,7 +9,7 @@ A Nuke slate plugin developed using Prism2, a VFX project workflow management so
 ![LCT 拷贝](https://github.com/SimonMing0528/PowerSlateX_For-Nuke-Nuke-slate-plugin/assets/137688513/49f3367a-0dfd-4b54-a0e7-daf19954903f)
 
 # Installation
-1. Copy the `PowerSlate_ForPrism2` full folder into the Nuke environment directory.<br>
+1. Copy the `PowerSlate_nuke` full folder into the Nuke environment directory.<br>
 it's usually at `C:\Users\(your username)\.nuke`
 <br>
 2. Then find the `init.py` file，If there isn't one, create it. and add the following code: <br>
