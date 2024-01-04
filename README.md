@@ -1,4 +1,4 @@
-# PowerSlateX_For Nuke ::: Nuke-slate-plugin
+# PowerSlateX_For Nuke ::: Nuke slate plugin
 
 ![normal_X_ForTittle](https://github.com/SimonMing0528/PowerSlateX_For-Nuke-Nuke-slate-plugin/assets/137688513/7bd34e95-3172-4430-ae59-ad976f3f1cad) <br>
 <br> 
