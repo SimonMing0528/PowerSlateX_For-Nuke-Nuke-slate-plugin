@@ -14,7 +14,10 @@ If you're using Prism2 to manage your project files, to get the plugin version c
 1. Copy the `PowerSlate_nuke` full folder into the Nuke environment directory.<br>
 it's usually at `C:\Users\(your username)\.nuke`
 <br>
-2. Then find the `init.py` file，If there isn't one, create it. and add the following code: <br>
+
+2. Then find the `init.py` file If there isn't one, create it. and add the following code:
+
+   
 <br>
 
 ```
@@ -34,6 +37,12 @@ nuke.pluginAddPath('./PowerSlate_nuke/py')
 Simply input your scene information manually。<br>
 <br>
 <br>
+
+## Load：
+![05163637](https://github.com/SimonMing0528/PowerSlateX_For-Nuke-Nuke-slate-plugin/assets/137688513/e0d31b43-8fed-4073-8d22-9cd9fd84b470) <br>
+>当场景信息错误的显示时请按下此按钮（这种情况通常不会发生）<br>
+> Press this button if there's an incorrect display of scene information (this situation typically doesn't occur)<br>
+
 ## TaskStatus：
 
 Status markings are divided into three types: `PostViz`; `In-progress`; `Review`.<br>
