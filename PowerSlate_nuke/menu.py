@@ -23,7 +23,7 @@ def setOnLoad():
         on_script_load_knob.setValue('from mainCallBack import* ;preStart();aftRenderDisable()')
 
 
-# add fxT_chromaticAberration Group to the fxT menu
+# add Group to the menu
 pow.addCommand('Shot',"createRenameShot(); setOnLoad()")
 pow.addCommand('LookDev',"createRenameLdv()")
 
